@@ -1,8 +1,7 @@
 # Bai-Perron-Test-in-Python
 I found there is no clear/step-by-step example of how to do Bai Perron test in Python. (There is packages in R and Stata)
 
-So I want to provide an example of the Bai-Perron test in Python and also use this repository to document my learning process of the algorithm.
+This repository provides an exmaple of using Bai-Perron method([Bai and Perron(2003)](https://onlinelibrary.wiley.com/doi/10.1002/jae.659)) on PCE data in Python. The [related code](https://journaldata.zbw.eu/dataset/computation-and-analysis-of-multiple-structural-change-models) of the paper can also be accessed as reference.
 
-The data used here is monthly PCE index.(https://fred.stlouisfed.org/series/PCE)
 
 
