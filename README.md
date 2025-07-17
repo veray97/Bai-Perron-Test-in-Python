@@ -7,7 +7,7 @@ The benefit of structural point test is that we can train different model in dif
 
 ## Chow Test
 
-* For the structural breakpoint analysis, I start from simple one -- Chow Test. This script "chow_test_pcepi.py" performs a Chow test to detect structural breaks in the PCEPI time series. I also do Chow test using the best breakpoint found in python. The F statistic calculated(Chow Test result in R.img) is the same as the result get from python.
+* For the structural breakpoint analysis, I start from simple one -- Chow Test. This script "[chow_test_pcepi.py](https://github.com/veray97/Bai-Perron-Test-in-Python/blob/main/chow_test_pcepi.py)" performs a Chow test to detect structural breaks in the PCEPI time series. I also do Chow test using the best breakpoint found in python. The [F statistic calculated](https://github.com/veray97/Bai-Perron-Test-in-Python/blob/main/Chow%20Test%20result%20in%20R.png) is the same as the [result get from python](https://github.com/veray97/Bai-Perron-Test-in-Python/blob/main/chow_test_results_in_python.png).
 
 ### Algorithm:
 1. Select a breakpoint time index
