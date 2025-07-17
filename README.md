@@ -7,19 +7,18 @@ The benefit of structural point test is that we can train different model in dif
 
 ## Chow Test
 
-* For the structural breakpoint analysis, I start from simple one -- Chow Test. This script "chow_test_pcepi.py" performs a Chow test to detect structural breaks in the PCEPI time series. 
+* For the structural breakpoint analysis, I start from simple one -- Chow Test. This script "chow_test_pcepi.py" performs a Chow test to detect structural breaks in the PCEPI time series. I also do Chow test using the best breakpoint found in python. The F statistic calculated(Chow Test result in R.img) is the same as the result get from python.
 
 ### Algorithm:
 1. Select a breakpoint time index
->Eg:Pick breakpoint as 10 from time index (t=1,2,3,4...)
 3. Fit a linear regression model to the data before and after the breakpoint
->Eg:one data is with time index 1,2,...10, another data is with time index 11,12,13...len(data)
 4. Calculate the F-statistic
 >(See the formula as below)
 6. Repeat for all possible breakpoints
 >There is restriction on smallest segement. For exmaple, the minimum number of data in one segment is 10)
 7. Select the breakpoint with the highest F-statistic
 8. Plot the results (Different breakpoint ~ Related F-statistic)
+9. Assess structural change by comparing the maximum F-statistic to a predefined benchmark to determine whether a breakpoint is warranted.
 
 &nbsp;
 
