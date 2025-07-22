@@ -35,3 +35,25 @@ The benefit of structural point test is that we can train different model in dif
 1. Only one breakpoint is allowed; 
 2. Linear regression is used to fit the data before and after the breakpoint.
 
+
+## CUSUM test
+
+* Rather than finding how many breakpoints in time serie data, CUSUM test is a statistical tool for detecting subtle but meaningful changes in data over time. And it can be combined with other algorithm, for example [Binary Segmentation](https://arxiv.org/html/2410.08654v1), [Optimal Partitioning](https://arxiv.org/pdf/math/0309285), or [Wild Binary Segmentation (WBS)](https://arxiv.org/abs/1411.0858) to find more breakpoints.
+
+### Algorithm:
+
+
+
+### Feature of CUSUM test:
+1. Sensitive to Small Mean Shifts: By accumulating tiny deviations, CUSUM can detect small changes in the process mean more quickly than Shewhart charts.
+2. Provides Information on Direction and Magnitude of Change: The slope of the CUSUM plot can indicate the trend and approximate magnitude of the mean shift.
+3. Suitable for Sequential Analysis: It processes one new data point at a time and updates the cumulative sum, making it ideal for real-time monitoring.
+
+
+
+
+
+
+
+
+
